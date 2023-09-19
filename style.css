@@ -1,0 +1,84 @@
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Montserrat&family=Nunito+Sans:opsz,wght@6..12,300&family=Roboto+Condensed:wght@300&family=Rubik+Iso&display=swap'); 
+ *{margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+ body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='600' preserveAspectRatio='none' viewBox='0 0 1440 600'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1060%26quot%3b)' fill='none'%3e%3crect width='1440' height='600' x='0' y='0' fill='rgba(15%2c 75%2c 124%2c 1)'%3e%3c/rect%3e%3cpath d='M546.397%2c248.768C569.716%2c250.627%2c595.807%2c248.698%2c608.924%2c229.329C623.3%2c208.101%2c621.548%2c179.435%2c608.156%2c157.573C595.317%2c136.613%2c570.916%2c125.515%2c546.397%2c127.252C524.482%2c128.804%2c508.077%2c145.773%2c498.135%2c165.365C489.209%2c182.955%2c489.165%2c203.495%2c499.044%2c220.568C508.906%2c237.61%2c526.769%2c247.203%2c546.397%2c248.768' fill='rgba(0%2c 7%2c 37%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M679.198%2c540.006C710.868%2c538.485%2c733.388%2c512.944%2c749.214%2c485.469C765.004%2c458.057%2c777.326%2c424.917%2c761.153%2c397.729C745.215%2c370.936%2c710.366%2c367.112%2c679.198%2c367.765C649.494%2c368.388%2c619.378%2c376.265%2c602.985%2c401.044C584.851%2c428.454%2c580.671%2c463.989%2c596.475%2c492.806C612.838%2c522.641%2c645.21%2c541.639%2c679.198%2c540.006' fill='rgba(0%2c 7%2c 37%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M254.21 384.48 a115.2 115.2 0 1 0 230.4 0 a115.2 115.2 0 1 0 -230.4 0z' fill='rgba(0%2c 7%2c 37%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M-121.61 396.02 a134.32 134.32 0 1 0 268.64 0 a134.32 134.32 0 1 0 -268.64 0z' fill='rgba(0%2c 7%2c 37%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1106.56 360.83 a164.4 164.4 0 1 0 328.8 0 a164.4 164.4 0 1 0 -328.8 0z' fill='rgba(0%2c 7%2c 37%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M296.61941823629985 492.29673395595967L252.5857080835204 364.41355394583337 124.70252807339409 408.44726409861283 168.73623822617355 536.3304441087391z' fill='rgba(0%2c 7%2c 37%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1060'%3e%3crect width='1440' height='600' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");}
+.calc
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+.calc h1{
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    letter-spacing: 5px;
+    font-weight: bold;
+    color: white;
+}
+.container {
+  position: relative;
+  max-width: 300px;
+  width: 100%;
+  border-radius: 20px;
+  padding: 10px 20px 20px;
+  background: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+}
+.display {
+  height: 80px;
+  width: 100%;
+  outline: none;
+  border: none;
+  text-align: right;
+  margin-bottom: 15px;
+  margin-top: 10px;
+  font-size: 25px;
+  color: #000e1a;
+  pointer-events: none;
+  border: 2px solid black;
+  border-radius: 20px;
+  padding-right: 8px;
+}
+#del{
+    color: red;
+    transition: all 0.1s ease-in-out;
+
+}
+#del:hover{
+    background-color: rgb(254, 154, 154);
+    font-weight: 500;
+}
+.buttons {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+}
+.buttons button {
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #eee;
+  transition: all 0.1s ease-in-out;
+}
+button:hover{
+    background-color: #93c6f3;
+}
+.buttons button:active {
+  transform: scale(0.99);
+}
+.operator {
+  color: #2f9fff;
+}
